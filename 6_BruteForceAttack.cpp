@@ -6,7 +6,7 @@ string password=""; //To store the user password
 int attempts=5;//Limit the number of attempts to 5
 
 int main() {
-cout<<"Select a password:"<<endl;
+cout<<"Type a password:"<<endl;
 cin>>password;
 while ((password!=right_pass)&&(attempts>>1)){ //Loop while the password is wrong and the user still has attempts left
 attempts--;//Decrease the number of attemts left
