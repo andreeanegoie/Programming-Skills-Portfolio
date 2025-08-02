@@ -11,16 +11,16 @@ int main() {
     string country[10] = {"France", "Italy","Portugal","Spain","Findland","Bulgaria","Romania","Austria","Germany","Poland"};
 
    for (int i = 0; i < 10; i++) {
-        cout << "What is the capital of " << country[i] << "? ";//will go through the country array one by one
+        cout << "What is the capital of " << country[i] << "? ";//Will go through the country array one by one
         cin >> capital; // alows user to input an answer
 
         // convert user input to lowercase so the answer is not case sensitive
-       for (int j = 0; j < capital.length(); j++) {
+       for (int j = 0; j < capital.length(); j++) { //Go from the first character to the last using the lenght of the input
             capital[j] = tolower(capital[j]);
         }
 
         // convert correct answer from the array to lowercase so it can be compared to the user input 
-        string correct = right_ans[i]; //create another string to store the lower case answers
+        string correct = right_ans[i]; //Create another string to store the lower case answers
         for (int j = 0; j < correct.length(); j++) {
             correct[j] = tolower(correct[j]);
         }
