@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+int x,reminder; 
 void  check() { 
    int x,reminder; 
    reminder=x%2; //for a number to be even it has to be divisable by 2
