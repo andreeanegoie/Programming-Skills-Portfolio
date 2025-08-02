@@ -20,18 +20,18 @@ int main() {
         }
 
         // convert correct answer from the array to lowercase so it can be compared to the user input 
-        string correct = right_ans[i];
+        string correct = right_ans[i]; //create another string to store the lower case answers
         for (int j = 0; j < correct.length(); j++) {
             correct[j] = tolower(correct[j]);
         }
 
         if (capital == correct) {
             cout << "The answer is correct!" << endl;
-            score++;// Increases score for every correct answer
+            score++;// Increases score for every correct answer // Incerase score only if the answer is correct.
         } else {
             cout << "The answer is incorrect!" << endl;
         }
     }
-cout<<"Your score is: "<<score<<endl; //prints score at the end
+cout<<"Your score is: "<<score<<endl; //Prints score at the end
     return 0;
 }
