@@ -35,7 +35,7 @@ cout<<endl; //go to a new line for the next loop
 //Write a loop that counts up from 100 to 200 in increments of 5.
 while(counter_5<=200){ // end the loop at 200
     cout<<counter_5<<" ";
-    counter_5+=10;//increment by 10
+    counter_5+=5;//increment by 5
 }
 //cout<<endl; 
 return 0;
