@@ -14,7 +14,7 @@ int main() {
         cout << "What is the capital of " << country[i] << "? ";//Will go through the country array one by one
         cin >> capital; // alows user to input an answer
 
-        // convert user input to lowercase so the answer is not case sensitive
+        // convert user input to lowercase so the answer is not case sensitive (Source: https://stackoverflow.com/questions/2661766/how-do-i-lowercase-a-string-in-c)
        for (int j = 0; j < capital.length(); j++) { //Go from the first character to the last using the lenght of the input
             capital[j] = tolower(capital[j]);
         }
